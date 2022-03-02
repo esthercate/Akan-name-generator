@@ -9,8 +9,66 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+  <div class="container-fluid">
+    <div class="card mb-3" style="max-width: 540px;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="./images/map-gb28867df3_1280.jpg" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">Welcome to Akan Name Generator</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in 
+              to additional content. This content is a little bit longer.</p>
+            
+            <form>
+              <div class="row">
+                <div class="heading">
+                  <h5>Date of Birth</h5>
+                </div>
+                <div class="col-sm">
+                  <label for="formGroupExampleInput" class="form-label">Date:</label>
+                  <input type="number" class="form-control" placeholder="DD" min="1" max="31" required>
+                </div>
+                <div class="col-sm">
+                  <label for="formGroupExampleInput" class="form-label">Month:</label>
+                  <input type="number" class="form-control" placeholder="MM" min="1" max="12" required>
+                </div>
+                <div class="col-sm">
+                  <label for="formGroupExampleInput" class="form-label" re>Year:</label>
+                  <input type="number" class="form-control" placeholder="YYYY" min="1900" max="2022" required>
+                </div>
+              </div>
+
+              <div class="gender">
+                <div class="heading">
+                  <h5>Gender</h5>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                  <label class="form-check-label" for="inlineRadio1">Male</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                  <label class="form-check-label" for="inlineRadio2">Female</label>
+                </div>
+              </div>
+              <div class="submit">
+                <div class="col-auto">
+                  <button type="submit" class="btn btn-primary">Get Name</button>
+                </div>
+              </div>
+              <div class="output">
+                <p>Your Akan name appears here!</p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
+  </div>
     <script src="./js/script.js"></script>
 </body>
 </html>
