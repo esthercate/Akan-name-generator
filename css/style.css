@@ -1,0 +1,58 @@
+body {
+  background-color: #e3e3e3;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+p,
+.form-label,
+.form-control,
+.form-check-label {
+  font-size: 14px;
+  opacity: 80%;
+}
+
+.heading {
+  color: #04aec5;
+}
+
+.card {
+  border-radius: 8px;
+  border-top: 7px solid #04aec5;
+}
+
+.form-control {
+  background-color: #f9f9f9;
+}
+
+.output {
+  color: #04aec5;
+  padding: .5rem;
+  text-align: center;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.par {
+  font-size: 1rem;
+}
+
+.card-title {
+  text-align: center;
+  color: #04aec5;
+}
+
+.btn {
+  background-color: #04aec5;
+  border: none;
+}
+
+.btn:hover {
+  color: #04aec5;
+  background-color: #e3e3e3;
+}
