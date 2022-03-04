@@ -13,12 +13,16 @@ p,
 .form-label,
 .form-control,
 .form-check-label {
-  font-size: 14px;
+  font-size: 16px;
   opacity: 80%;
 }
 
 .heading {
   color: #04aec5;
+}
+
+h6 {
+  font-size: 18px;
 }
 
 .card {
@@ -30,18 +34,6 @@ p,
   background-color: #f9f9f9;
 }
 
-.output {
-  color: #04aec5;
-  padding: .5rem;
-  text-align: center;
-  border-radius: 5px;
-  font-weight: bold;
-}
-
-.par {
-  font-size: 1rem;
-}
-
 .card-title {
   text-align: center;
   color: #04aec5;
@@ -50,9 +42,24 @@ p,
 .btn {
   background-color: #04aec5;
   border: none;
+  font-size: 18px;
+  font-weight: bold;
+  padding: .5rem 1.2rem;
 }
 
 .btn:hover {
   color: #04aec5;
   background-color: #e3e3e3;
+}
+
+.output {
+  color: #04aec5;
+  padding: .5rem;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.par {
+  font-size: 1.1rem;
+  font-weight: bold;
 }
