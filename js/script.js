@@ -2,7 +2,7 @@ function getName() {
   let dd = document.getElementById("dateOfBirth").value;
   let mm = document.getElementById("monthOfBirth").value;
   let year = document.getElementById("yearOfBirth").value;
-  let gender = document.getElementsByName("gender").value;
+  //let gender = document.getElementsByName("gender").value;
 
   let cc = Number(year.slice(0,2));
   let yy = Number(year.slice(2,4));

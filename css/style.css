@@ -30,7 +30,8 @@ h6 {
   border-top: 7px solid #04aec5;
 }
 
-.form-control {
+.form-control,
+.form-select {
   background-color: #f9f9f9;
 }
 
