@@ -19,7 +19,7 @@
               details, calculates the day of the week that you were born, then depending on your gender, 
               it outputs your Akan Name.</p>
             
-            <form name="myForm">
+            <form name="form" id="form" onsubmit="findDay()">
               <div class="row mb-3">
                 <div class="heading">
                   <h6>Date of Birth</h6>
@@ -42,16 +42,21 @@
                 <div class="heading">
                   <h6>Gender</h6>
                 </div>
-                <select class="form-select" aria-label="Default select example" required>
-                  <option selected>Select Your Gender</option>
-                  <option value="1">Male</option>
-                  <option value="2">Female</option>
-                  </select>
+                <div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="gender" id="inlineRadio1" value="Male" checked>
+                    <label class="form-check-label" for="inlineRadio1">Male</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="gender" id="inlineRadio2" value="Female">
+                    <label class="form-check-label" for="inlineRadio2">Female</label>
+                  </div>
+                </div>
               </div>
 
               <div class="submit mb-3">
                 <div class="col-auto">
-                  <button type="submit" class="btn btn-primary" id="myBtn" onclick="getName()">Get Name</button>
+                  <button type="submit" class="btn btn-primary" id="myBtn">Get Name</button>
                 </div>
               </div>
 
@@ -64,6 +69,8 @@
       </div>
     </div>
   </div>
+
+  <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <script src="./js/script.js"></script>
 </body>
