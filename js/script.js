@@ -10,6 +10,7 @@
   }
 }
 
+
 $(document).ready(function() {
   $("form#form").submit(function(event) {
       event.preventDefault();
@@ -19,7 +20,6 @@ $(document).ready(function() {
       var g = $("input:radio[name=gender]:checked").val();
       var result = akan(y, m, d, g);
       alert("Your akan name is: " + result);
-      //refresh page
       document.getElementById("form").reset();
   });
 }); 
