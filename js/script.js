@@ -1,4 +1,4 @@
- var akan = function(y, m, d, g) {
+ var findAkanName = function(y, m, d, g) {
   var femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
   var maleNames = ["Kwasi", "Kudwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
 
@@ -18,7 +18,7 @@ $(document).ready(function() {
       var m = parseInt($("#monthOfBirth").val());
       var d = parseInt($("#dateOfBirth").val());
       var g = $("input:radio[name=gender]:checked").val();
-      var result = akan(y, m, d, g);
+      var result = findAkanName(y, m, d, g);
       alert("Your akan name is: " + result);
       document.getElementById("form").reset();
   });
