@@ -1,12 +1,12 @@
- var findAkanName = function(y, m, d, g) {
-  var femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
-  var maleNames = ["Kwasi", "Kudwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
+ var findAkanName = function(year, month, date, gender) { 
+  var mNames = ["Kwasi", "Kudwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
+  var fNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
 
-  var d = new Date(y, --m, d);
-  if (g === "Female") {
-      return d && femaleNames[d.getDay()];
+  var date = new Date(year, --month, date);
+  if (gender === "Male") {
+      return date && mNames[date.getDay()];
   } else {
-      return d && maleNames[d.getDay()];
+      return date && fNames[date.getDay()];
   }
 }
 
@@ -14,11 +14,11 @@
 $(document).ready(function() {
   $("form#form").submit(function(event) {
       event.preventDefault();
-      var y = parseInt($("#yearOfBirth").val());
-      var m = parseInt($("#monthOfBirth").val());
-      var d = parseInt($("#dateOfBirth").val());
-      var g = $("input:radio[name=gender]:checked").val();
-      var result = findAkanName(y, m, d, g);
+      var year = parseInt($("#yearOfBirth").val());
+      var month = parseInt($("#monthOfBirth").val());
+      var date = parseInt($("#dateOfBirth").val());
+      var gender = $("input:radio[name=gender]:checked").val();
+      var result = findAkanName(year, month, date, gender);
       alert("Your akan name is: " + result);
       document.getElementById("form").reset();
   });
