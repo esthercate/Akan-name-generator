@@ -10,6 +10,7 @@
   }  
 }
 
+
 document.getElementById("btn").onclick = function(){
     var date = document.getElementById("dateOfBirth").value;
     var month = document.getElementById("monthOfBirth").value;
