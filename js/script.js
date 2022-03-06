@@ -27,6 +27,13 @@ document.getElementById("btn").addEventListener("click", function(event) {
         alert("Invalid Month! Please enter a valid month of birth");
     } else {   
     }
+
+    if(year === "" || year <= 1000 || year > 2022) {
+        alert("Please enter year of birth");
+    } else {   
+    }
+
+    
     
     var result = findAkanName(year, month, date, gender);
     document.getElementById("output").textContent = "Your Akan Name is " + result;
