@@ -14,6 +14,8 @@ document.getElementById("btn").addEventListener("click", function(event) {
     event.preventDefault();
     var date = document.getElementById("dateOfBirth").value;
     var month = document.getElementById("monthOfBirth").value;
+    var year = document.getElementById("yearOfBirth").value;
+    var gender = document.querySelector("input[name=gender]:checked").value;
     
     //Validation of day and month input
     if(date === "" || date <= 0 || date > 31) {
@@ -26,8 +28,6 @@ document.getElementById("btn").addEventListener("click", function(event) {
     } else {   
     }
     
-    var year = document.getElementById("yearOfBirth").value;
-    var gender = document.querySelector("input[name=gender]:checked").value;
     var result = findAkanName(year, month, date, gender);
     document.getElementById("output").textContent = "Your Akan Name is " + result;
     document.getElementById("form").reset();
