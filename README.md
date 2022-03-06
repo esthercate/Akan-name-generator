@@ -50,4 +50,4 @@ For support, send email to vuthi.esther@gmail.com.
 [MIT](https://choosealicense.com/licenses/mit/) License
 
 ## 🔗 Live Links
-- [Akan Name Generator](https://github.com/esthercate)
+- [Akan Name Generator](https://esthercate.github.io/Akan-name-generator/)
