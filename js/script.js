@@ -10,13 +10,25 @@
   }  
 }
 
-
-document.getElementById("btn").onclick = function(){
+document.getElementById("btn").addEventListener("click", function(event) {
+    event.preventDefault();
     var date = document.getElementById("dateOfBirth").value;
     var month = document.getElementById("monthOfBirth").value;
+    
+    //Validation of day and month input
+    if(date === "" || date <= 0 || date > 31) {
+        alert("Invalid Date! Please enter a valid date of birth");
+    } else {  
+    }
+
+    if(month === "" || month <= 0 || month > 12) {
+        alert("Invalid Month! Please enter a valid month of birth");
+    } else {   
+    }
+    
     var year = document.getElementById("yearOfBirth").value;
     var gender = document.querySelector("input[name=gender]:checked").value;
     var result = findAkanName(year, month, date, gender);
     document.getElementById("output").textContent = "Your Akan Name is " + result;
     document.getElementById("form").reset();
-};
+});
