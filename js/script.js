@@ -10,7 +10,10 @@
   }  
 }
 
-document.getElementById("btn").addEventListener("click", function(event) {
+
+//document.getElementById("btn").addEventListener("click", function(event) {
+var form = document.getElementById("form");
+form.addEventListener("submit", function(event){
     event.preventDefault();
     var date = document.getElementById("dateOfBirth").value;
     var month = document.getElementById("monthOfBirth").value;
@@ -19,22 +22,23 @@ document.getElementById("btn").addEventListener("click", function(event) {
     
     //Validation of day and month input
     if(date === "" || date <= 0 || date > 31) {
-        alert("Invalid Date! Please enter a valid date of birth");
-    } else {  
+        alert("Invalid Date! Please Enter a Valid Date of Birth");
+    } else {
+        
     }
 
     if(month === "" || month <= 0 || month > 12) {
-        alert("Invalid Month! Please enter a valid month of birth");
+        alert("Invalid Month! Please Enter a Valid Month of Birth");
     } else {   
+        
     }
 
     if(year === "" || year <= 1000 || year > 2022) {
-        alert("Please enter year of birth");
-    } else {   
+        alert("invalid Year! Please Enter a Valid Year of Birth");
+    } else {  
+         
     }
 
-    
-    
     var result = findAkanName(year, month, date, gender);
     document.getElementById("output").textContent = "Your Akan Name is " + result;
     document.getElementById("form").reset();
