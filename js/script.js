@@ -23,23 +23,13 @@ form.addEventListener("submit", function(event){
     //Validation of day and month input
     if(date === "" || date <= 0 || date > 31) {
         alert("Invalid Date! Please Enter a Valid Date of Birth");
-    } else {
-        
-    }
-
-    if(month === "" || month <= 0 || month > 12) {
+    } else if (month === "" || month <= 0 || month > 12) {
         alert("Invalid Month! Please Enter a Valid Month of Birth");
-    } else {   
-        
-    }
-
-    if(year === "" || year <= 1000 || year > 2022) {
+    } else if(year === "" || year <= 1000 || year > 2022) {
         alert("invalid Year! Please Enter a Valid Year of Birth");
-    } else {  
-         
+    } else {
+        var result = findAkanName(year, month, date, gender);
+        document.getElementById("output").textContent = "Your Akan Name is " + result;
+        document.getElementById("form").reset();  
     }
-
-    var result = findAkanName(year, month, date, gender);
-    document.getElementById("output").textContent = "Your Akan Name is " + result;
-    document.getElementById("form").reset();
 });
