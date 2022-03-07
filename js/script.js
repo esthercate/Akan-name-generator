@@ -22,11 +22,11 @@ form.addEventListener("submit", function(event){
     
     //Validation of day and month input
     if(date === "" || date <= 0 || date > 31) {
-        alert("Invalid Date! Please Enter a Valid Date of Birth");
+        alert("Invalid Date! \nPlease enter a valid date of birth");
     } else if (month === "" || month <= 0 || month > 12) {
-        alert("Invalid Month! Please Enter a Valid Month of Birth");
+        alert("Invalid Month! \nPlease enter a valid month of birth");
     } else if(year === "" || year <= 1000 || year > 2022) {
-        alert("invalid Year! Please Enter a Valid Year of Birth");
+        alert("Invalid Year! \nPlease enter a valid year of birth");
     } else {
         var result = findAkanName(year, month, date, gender);
         document.getElementById("output").textContent = "Your Akan Name is " + result;
